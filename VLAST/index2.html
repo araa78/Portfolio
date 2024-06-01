@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>VLAST</title>
+    <link rel="shortcut icon" href="./favicon/32.png"><!-- 파비콘 제작해서 추가 -->
+    <link rel="apple-touch-icon" sizes="32x32" href="./favicon/32.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="./favicon/64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="./favicon/128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="./favicon/256.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="./favicon/512.png">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+                
+
+    
+
+    <script src="./js/modernizr.custom.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui-1.12.0.custom.min.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/mixFilter.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var wd = parseInt($(window).width());
+            if(wd>=770){
+                $('#fullpage').fullpage({
+                sectionsColor: ['#fff', '#eae6e7', '#fff', '#a4a4a4'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                afterLoad: function(anchorLink, index) {
+                    //section 2
+                    if (index == 2) {
+                        //moving the image
+                        $('#section1').find('.occupy').delay(300).animate({
+                            left: '0%'
+                        }, 2000, 'easeOutExpo');
+
+
+
+                    }
+                    //section 3
+                    if (anchorLink == '3rdPage') {
+                        //moving the image
+                        $('#section2').find('.container').delay(0).animate({
+                            top: '-2%',
+                            opacity:'1'
+                        }, 2000, 'easeOutExpo');
+                    }
+                }
+            });
+            } 
+
+            const swiperEl = document.querySelector('swiper-container')
+            Object.assign(swiperEl, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                clickable: true,
+                        },
+            breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+    swiperEl.initialize();
+        });
+
+        
+
+    $('.menu-toggle').click(function(){
+        $('.header ul').toggleClass('open');
+    });
+
+    $(document).ready(function() {
+    const menuIcon = $('.menu_icon');
+    menuIcon.click(function(e) {
+        e.preventDefault();
+        menuIcon.toggleClass('active');
+    });
+});
+
+$(document).ready(function() {
+      
+      var menuOpen = false;
+      
+      // 메뉴 열기
+      $(".menu_icon").click(function(event) {
+        
+          event.stopPropagation();
+          $(".menu_icon").toggleClass("open");
+          $(".header > ul").toggle();
+          
+          if (menuOpen) {
+              $("#main").show();
+              menuOpen = false;
+          } else {
+              $("#main").hide();
+              menuOpen = true;
+          }
+      });
+      
+      // 메뉴 닫기
+      $("#hamburger-menu.open").click(function() {
+          $("#hamburger-menu").removeClass("open");
+          $("#main").removeClass("overflow-hidden");
+          $("#menu-container .menu-list").removeClass("active");
+          $(".menu-list").hide();
+      });
+  
+});
+
+ 
+
+    </script>
+
+</head>
+
+<body>
+    <div class="head">
+        <div class="header">
+            <div class="logo"><a href="#"><img src="img/plave.png"></a></div>
+            <a class="menu_icon" href="#">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </a>
+            
+            <ul>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">PLAVE</a></li>
+                <li><a href="#">PRESS</a></li>
+                <li><a href="#">NOTICE</a></li>
+                <li><a href="#">CAREER</a></li>
+            </ul>
+            <div class="search">
+                <input type="search" placeholder="SEARCH">
+                <div class="search2">
+                    <a href="#"><img src="img/Group 2.png"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menubox">
+        <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" onfocus="this.blur();">01</a>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onfocus="this.blur();">02</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onfocus="this.blur();">03</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="main">
+                <div class="text1">
+                    PLAY<br>
+                    <strong>BEYOND</strong><br>
+                    PLAY
+                </div>
+
+                <div class="text2">
+                    <p>블래스트는 Virtual Entertainment 회사로</p>
+                    <p>게임 엔진을 기반으로 실시간 그래픽으로 소통하는 미래를 만들어가고 있습니다.</p>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div id="main2">
+                <div>
+                    <h1>PLAVE MEMBER</h1>
+                </div>
+
+                <div class="box1">
+                    <ul>
+                        <li><img src="img/YEJUN.png">
+                            <div class="black">
+                                <p class="name">YEJUN</p>
+                                <p class="birth">01.09.12</p>
+                                <div class="job-box">
+                                    <p class="job1">리더</p>
+                                    <p class="job2">메인보컬</p>
+                                    <p class="job3">프로듀서</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li><img src="img/NOAH.png">
+                            <div class="black">
+                                <p class="name">NOAH</p>
+                                <p class="birth">01.02.10</p>
+                                <div class="job-box">
+                                    <p class="job1">메인보컬</p>
+                                    <p class="job2">프로듀서</p>
+                                </div>    
+                            </div>
+                        </li>
+                        <li><img src="img/BAMBY.png">
+                            <div class="black">
+                                <p class="name">BAMBY</p>
+                                <p class="birth">02.07.15</p>
+                                <div class="job-box">
+                                    <p class="job1">보컬</p>
+                                    <p class="job2">안무가</p>
+                                    <p class="job3">메인댄서</p>
+                                </div>    
+                            </div>
+                        </li>
+                        <li><img src="img/EUNHO.png">
+                            <div class="black">
+                                <p class="name">EUNHO</p>
+                                <p class="birth">03.05.24</p>
+                                <div class="job-box">
+                                    <p class="job1">보컬</p>
+                                    <p class="job2">메인래퍼</p>
+                                    <p class="job3">프로듀서</p>
+                                </div>    
+                            </div>
+                        </li>
+                        <li><img src="img/HAMIN.png">
+                            <div class="black">
+                                <p class="name">HAMIN</p>
+                                <p class="birth">??.11.01</p>
+                                <div class="job-box">
+                                    <p class="job1">안무가</p>
+                                    <p class="job2">메인댄서</p>
+                                    <p class="job3">리드래퍼</p>
+                                </div>    
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!--  section1  -->
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="text3">
+                    <h1>NEWS</h1>
+                    <P>블래스트와 함께
+                        <strong>Virtual Entertainment</strong>
+                        의 미래를 함께 만들어갈 우수한 인재를 찾습니다.
+                    </P>
+                </div>
+
+                <swiper-container class="mySwiper" init="true">
+                    <swiper-slide>
+                        <div class="sub1">
+                            <p class="p2">채용중</p>
+                        </div>
+
+                        <p>아티스트 마케팅 및 매니지먼트</p>
+
+                        <div class="sub2">
+                            <p class="p3">주요업무</p>
+                        </div>
+
+                        <div class="sub3">
+                            <p>
+                                블래스트와 함께할 아티스트 마케팅 및
+                                매니지먼트 담당자를 모집합니다.
+                                꿈과 도전의식을 지닌 분들의 많은
+                                지원바랍니다.
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="sub1">
+                            <p class="p2">채용중</p>
+                        </div>
+
+                        <p>리깅 아티스트</p>
+
+                        <div class="sub2">
+                            <p class="p3">주요업무</p>
+                        </div>
+
+                        <div class="sub3">
+                            <p>
+                                블래스트와 함께할 리깅 아티스트 담당자를 모집합니다.
+                                꿈과 도전의식을 지닌 분들의 많은
+                                지원바랍니다.
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="sub1">
+                            <p class="p2">채용중</p>
+                        </div>
+
+                        <p>A&R</p>
+
+                        <div class="sub2">
+                            <p class="p3">주요업무</p>
+                        </div>
+
+                        <div class="sub3">
+                            <p>
+                                블래스트와 함께할 A&R 담당자를 모집합니다.
+                                꿈과 도전의식을 지닌 분들의 많은
+                                지원바랍니다.
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="sub1">
+                            <p class="p2">채용중</p>
+                        </div>
+
+                        <p>언리얼 룩뎁 아티스트</p>
+
+                        <div class="sub2">
+                            <p class="p3">주요업무</p>
+                        </div>
+
+                        <div class="sub3">
+                            <p>
+                                블래스트와 함께할 언리얼 룩뎁 아티스트 담당자를 모집합니다.
+                                꿈과 도전의식을 지닌 분들의 많은
+                                지원바랍니다.
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="sub1">
+                            <p class="p2">채용중</p>
+                        </div>
+
+                        <p>언리얼 룩뎁 아티스트</p>
+
+                        <div class="sub2">
+                            <p class="p3">주요업무</p>
+                        </div>
+
+                        <div class="sub3">
+                            <p>
+                                블래스트와 함께할 언리얼 룩뎁 아티스트 담당자를 모집합니다.
+                                꿈과 도전의식을 지닌 분들의 많은
+                                지원바랍니다.
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="sub1">
+                            <p class="p2">채용중</p>
+                        </div>
+
+                        <p>언리얼 룩뎁 아티스트</p>
+
+                        <div class="sub2">
+                            <p class="p3">주요업무</p>
+                        </div>
+
+                        <div class="sub3">
+                            <p>
+                                블래스트와 함께할 언리얼 룩뎁 아티스트 담당자를 모집합니다.
+                                꿈과 도전의식을 지닌 분들의 많은
+                                지원바랍니다.
+                            </p>
+                        </div>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <div class="sub1">
+                            <p class="p2">채용중</p>
+                        </div>
+
+                        <p>언리얼 룩뎁 아티스트</p>
+
+                        <div class="sub2">
+                            <p class="p3">주요업무</p>
+                        </div>
+
+                        <div class="sub3">
+                            <p>
+                                블래스트와 함께할 언리얼 룩뎁 아티스트 담당자를 모집합니다.
+                                꿈과 도전의식을 지닌 분들의 많은
+                                지원바랍니다.
+                            </p>
+                        </div>
+                    </swiper-slide>
+                </swiper-container>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
