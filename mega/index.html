@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>메가MGC커피</title>
+    <link rel="shortcut icon" href="favicon/32.png"><!-- 파비콘 제작해서 추가 -->
+    <link rel="apple-touch-icon" sizes="32x32" href="favicon/32.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="favicon/64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="favicon/126.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="favicon/256.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="favicon/512.png">
+    <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <script src="./js/modernizr.custom.min.js"></script>
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-ui-1.12.0.custom.min.js"></script>
+    <script src="slick.js"></script>
+    <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/mixFilter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var wd = parseInt($(window).width());
+            if(wd>=770){
+                $('#fullpage').fullpage({
+                sectionsColor: ['#fff', '#eae6e7', '#fff', '#a4a4a4'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                afterLoad: function(anchorLink, index) {
+                    //section 2
+                    if (index == 2) {
+                        //moving the image
+                        $('#section1').find('.occupy').delay(300).animate({
+                            left: '0%'
+                        }, 2000, 'easeOutExpo');
+
+
+
+                    }
+                    //section 3
+                    if (anchorLink == '3rdPage') {
+                        //moving the image
+                        $('#section2').find('.container').delay(0).animate({
+                            top: '-2%',
+                            opacity:'1'
+                        }, 2000, 'easeOutExpo');
+                    }
+                }
+            });
+            }
+            
+            
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div class="head">
+    
+
+
+            <div class="head_warp"> 
+                <div class="head1">
+                    <div class="head_logo"><a href="#"><img src="img/메가커피_로고_03 1.png"></a></div>
+
+
+                        <div class="head_menu">
+                            <ul>
+                                <li><a href="#">메가스토리</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">브랜드</a></li>
+                                        <li><a href="#">BI</a></li>
+                                        <li><a href="#">오시는길</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">메뉴소개</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">음료</a></li>
+                                        <li><a href="#">푸드</a></li>
+                                        <li><a href="#">상품</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">매장</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">매장찾기</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">창업안내</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">개설비용</a></li>
+                                        <li><a href="#">인테리어</a></li>
+                                        <li><a href="#">창업비용</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">메가소식</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">공지사항</a></li>
+                                        <li><a href="#">이벤트</a></li>
+                                        <li><a href="#">FAQ</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">채용</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">채용안내</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <div class="head_sns">
+                            <div class="icon">
+                                <ul>
+                                    <li><a href="#"><img src="img/sns1.png"></a></li>
+                                    <li><a href="#"><img src="img/insta.png"></a></li>
+                                    <li><a href="#"><img src="img/facebook.png"></a></li>
+                                </ul>
+                            </div>
+
+                            <div class="mobile_menu_icon">
+                                <ul>
+
+                                </ul>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="menubox">
+        <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" onfocus="this.blur();">￣MAIN</a>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onfocus="this.blur();">￣MENU</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onfocus="this.blur();">￣MEGA</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+
+            <div class="scroll">
+                <img src="img/Scroll-Down-Icon.png" alt="스크롤">
+                <h6>scroll down</h6>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div id="box1">
+                <div class="cont_box">
+                    <ul>
+                        <li>
+                            <div class="circle"></div>
+                            <div class="cont_text_title">
+                                <span>메가MGC커피 봄시즌 신메뉴</span>
+                                <h2>봄날의 행복을 그리다</h2>
+                            </div>
+                            <div class="cont_text_sub">
+                                <span>봄이 그린 애플</span>
+                                <p>봄날의 행복을 그리는 봄이 그린 애플<br>
+                                    봄날의 따뜻함을 채우는 봄이 채운 든든함<br>
+                                    지금 바로 가까운 메가MGC커피에서 만나보세요!</p>
+                                <div class="cont_text_menu">
+                                    <a href="#">
+                                        <div class="sub_menu_btn">
+                                            메뉴 더보기
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+    
+                        <li>
+                            <swiper-container class="mySwiper" pagination="false" effect="coverflow" grab-cursor="true" centered-slides="true"
+                            slides-per-view="auto" coverflow-effect-rotate="30" coverflow-effect-stretch="0" coverflow-effect-depth="100"
+                            coverflow-effect-modifier="1" coverflow-effect-slide-shadows="false">
+                                <swiper-slide>
+                                <img src="img/green.jpg" />
+                                </swiper-slide>
+                                <swiper-slide>
+                                <img src="img/apple.jpg" />
+                                </swiper-slide>
+                                <swiper-slide>
+                                <img src="img/combu.jpg" />
+                                </swiper-slide>
+                                <swiper-slide>
+                                <img src="img/ade.jpg" />
+                                </swiper-slide>
+                                <swiper-slide>
+                                <img src="img/hot.jpg" />
+                                </swiper-slide>
+                                <swiper-slide>
+                                <img src="img/bread.jpg" />
+                                </swiper-slide>
+                        </swiper-container>
+                        </li>
+                    </ul>
+                </div>
+            </div> <!--  section1  -->
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div id="box2">
+                    <div class="cont_box2-1">
+                        <ul>
+                            <li class="box3">
+                                <div class="box4">
+                                    <div class="cont_text_title2">
+                                        <span>메가MGC커피 이야기</span>
+                                        <h2 class="drag-text">MEGA SIZE<br>
+                                            & 2 SHOT</h2>
+                                    </div>
+                                    <div class="cont_text_sub2">
+                                        <p class="text1">100% 프리미엄 아라비카 원두를 로스팅하여,<br>
+                                            깊고 부드러운 커피와 빅 사이즈로 구성된<br>
+                                            다양한 음료를 합리적인 가격으로 제공합니다.</p>
+                                        <p class="text2">좋은 품질의 재료를, 합리적인 가격으로 제공하여<br>
+                                            좋은 품질의 음료를 저렴한 가격으로 만나보실 수 있습니다.
+                                        </p>
+                                    </div>        
+                                        
+                                    <div class="cont_text_menu2">
+                                    <a href="#">
+                                            <div class="sub_menu_btn1">
+                                                    브랜드소개
+                                            </div>
+                                        </a>
+                                        <a href="#">
+                                            <div class="sub_menu_btn2">
+                                                창업문의
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>  
+                            <li class="box5">
+                                <div class="cont_text_sub3">
+                                    <img src="img/mega.jpg">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- <div id="footer">
+                <p>COPYRIGHT &copy; 2022 PENGSU ALL RIGHTS RESERVED.</p>
+            </div> -->
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

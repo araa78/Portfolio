@@ -1,0 +1,754 @@
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf') format("truetype");
+    font-display: swap;
+}
+
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Pretendard';
+    box-sizing: border-box;
+}
+body{
+	font-size: 14px; 
+	color: #000;
+	background-color: #fff;
+    overflow-x: hidden;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color:#000000;
+    text-decoration: none;
+}
+img{
+    border:none;
+    vertical-align: middle;
+}
+input{
+    outline:none;
+}
+button{
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+        *{margin:0; padding:0; box-sizing: border-box; }
+        ul,li{list-style:none;}
+        html,body{width:100%; height:100%;}
+        a{color:#000000; text-decoration: none;} 
+
+        .head{position:fixed; z-index:9999; width:100%; background-color:rgba(0,0,0,0.7);}
+
+        .head1{display:flex; justify-content: space-between;align-items: center; max-width:1400px; margin:auto; box-shadow: 0 4px 4px -7px black;}
+        
+        .head_menu>ul{display:flex; }
+        .head_menu > ul > li > a{padding:40px 0; display:block; color:white; font-size:18px;}
+        .head_menu>ul>li{padding:0 40px;}
+
+ 
+
+        .submenu>li>a{padding:20px 0; display:block;}
+        .submenu{background-color: #FDD000; display:none;}
+
+        .icon > ul > li{margin-left:10px;}
+        .icon>ul{display:flex;}
+
+
+        #menubox{position: fixed; bottom: 15%; left: 2%; height: 80px;
+        z-index: 99;}
+
+        #menu{width: 20%; height: 100px;}
+        #menu li a{color: #333; font-size: 16px; font-weight:bold; opacity: 0.3;font-weight:bolder;}
+        #menu li a.active{color: blue; font-weight:bolder;}
+        #menu li a,#menu li.active a{padding: 10px 10px; display:block;color:#000; font-weight:bolder;}
+        #menu li.active a{color: #FDD000; font-weight:bolder; opacity: 1;}
+
+
+        #section0{background: url(../img/back2.png) no-repeat; background-size: cover;}
+
+
+        /* section0 */
+        #fullpage{
+            width: 100%;
+            height: 100%;
+        }
+        #section0{
+            width: 100%;
+            height: 100%;
+        }
+        #section1{width:100%; height:100%;}
+        #box1{width:100%; height:100%; background-color: white;}
+
+        swiper-container {
+            width: 100%;
+            padding-top: 18%;
+            padding-bottom: 50px;
+            
+    
+          }
+      
+          swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+            border:1px solid #ccc;
+            border-radius: 3px;
+          }
+      
+          swiper-slide img {
+            display: block;
+            width: 100%;
+          }
+
+
+          .circle{position:relative; background-color: #FDD000; border-radius: 50%; border:1px solid black;}
+
+          .cont_text_title{position:absolute; top:20%; left:50%; z-index:10; text-align: center; transform:translateX(-50%);}
+          .cont_text_title>span{font-size:45px;  font-weight:bold; display:block;}
+          .cont_text_title>h2{ padding-top:25px; position:relative; display:inline-block;} 
+
+
+          .cont_text_title>h2:before{content:''; position:absolute; width:0%; height:27%; background-color:#FDD000; transition:all 0.3s ease; z-index:-1; bottom:0;}
+
+          .cont_text_title:hover > h2:before{width:100%;}
+
+          .cont_text_sub{position:absolute; top:70%; left:50%; text-align: center; transform: translateX(-50%);}
+          .cont_text_sub span{text-align: center; font-size:30px; font-weight:bold;}
+          .cont_text_sub p{font-size:16px; padding:10px 0; line-height:25px; margin-top:20px;}
+          .cont_text_menu{background-color: #FDD000; width:110px; height:40px; line-height: 40px; text-align: center; transition:all 0.2s ease; margin:auto; margin-top:20px;}
+          .cont_text_menu:hover{transform:translateY(-10%); background-color: #fde26b; cursor: pointer;}
+
+          .cont_text_sub3{width:100%; height:100%;}
+          .cont_text_sub3>img{width:180%;}
+
+
+          .box2{height:100%; border:1px solid red;}
+
+          .cont_box2-1>ul{display:flex; align-items: center; height:100%;}
+          .cont_box2-1>ul li{width:50%; height:100%;}
+         
+          .cont_box2-1{height:100%;}
+          .box3{text-align: left;}
+          .box4{display:inline-block; margin-left:23%;}
+
+          .box4 .cont_text_title2>span{font-size:30px; font-weight:100; }
+          .box4 .cont_text_title2>h2{padding:30px 0; font-size:55px; font-weight:900;}
+
+          .cont_text_title2>h2:before{content:''; position:absolute; width:0%; height:27%; background-color:#FDD000; transition:all 0.3s ease; z-index:-1; bottom:0;}
+
+          .cont_text_title2:hover > h2:before{width:100%;}
+
+
+          .cont_text_sub2 .text1{font-size:25px; padding-bottom:30px; font-weight:400;}
+          .cont_text_sub2 .text2{font-size:16px; padding-bottom:30px; font-weight:200;}
+
+          .cont_text_menu2{margin-left:12%;}
+
+          .sub_menu_btn1{display:inline-block; background-color: #FDD000; width:120px; height:50px; line-height: 50px; text-align: center; transition:all 0.2s ease; margin:auto; margin-top:20px; margin-right:20px; font-size:18px; font-weight:600;}
+          .sub_menu_btn2{display:inline-block; background-color: #FDD000; width:120px; height:50px; line-height: 50px; text-align: center; transition:all 0.2s ease; margin:auto; margin-top:20px; font-size:18px; font-weight:600;}
+        
+          .sub_menu_btn1:hover{transform:translateY(-10%); background-color: #fde26b; cursor: pointer;}
+          .sub_menu_btn2:hover{transform:translateY(-10%); background-color: #fde26b; cursor: pointer;}
+
+
+
+          .cont_text_title2>h2:before{content:''; position:absolute; width:0%; height:27%; background-color:#FDD000; transition:all 0.3s ease; z-index:-1; bottom:0; cursor: pointer;}
+
+          .cont_text_title:hover > h2:before{width:100%;}
+
+          .drag-text::selection {
+            color: black;
+            background: #FDD000;
+          }
+
+
+
+
+
+        .main .line span{
+            display: block;
+            position: absolute;
+            background: #ffa315;
+            z-index: 11;
+        }
+        .main .line span:nth-child(1){
+            top: 0;
+            left: 0;
+            width: 80%;
+            height: 5px;
+            animation: ani1 1s;
+        }
+        .main .line span:nth-child(2){
+            top:0;
+            left: 0;
+            width: 5px;
+            height: 80%;
+            animation: ani2 1s;
+        }
+        .main .line span:nth-child(3){
+            bottom: 0;
+            right: 0;
+            width: 5px;
+            height: 80%;
+            animation: ani2 1s;
+        }
+        .main .line span:nth-child(4){
+            bottom: 0;
+            right: 0;
+            width: 80%;
+            height: 5px;
+            animation: ani1 1s;
+        }
+        .main_text{
+            background: rgba(255, 163, 21, 0.1);
+            border-radius: 50%;
+            animation: ani3 1s;
+        }
+        @keyframes ani1 {
+            0%{
+                width: 0;
+            }
+            100%{
+                width: 80%;
+            }
+        }
+        @keyframes ani2 {
+            0%{
+                height: 0;
+            }
+            100%{
+                height: 80%;
+            }
+        }
+        @keyframes ani3 {
+            0%{
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100%{
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+        .main h2{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .main p{
+            font-size: 40px;
+        }
+        .main h3{
+            font-size: 40px;
+            font-weight: bold;
+        }
+        .scroll{
+            width: 300px;
+            height: 100px;
+            margin: 830px auto 0;
+            text-align: center;
+        }
+        .scroll img{
+            width: 40px;
+            height: auto;
+            padding:10px 0;
+            animation: ani5 3s infinite ease-in-out;
+        }
+        .scroll h6{
+            font-size: 14px; color:white;
+        }
+        @keyframes ani5 {
+            0%{
+                transform: translateY(0);
+            }
+            50%{
+                transform: translateY(5px);
+            }
+            100%{
+                transform: translateY(0);
+            }
+        }
+
+        /* section1 */
+        #section1{
+            background-color: #f5f5f5;
+        }
+        #profile{
+            position: relative;
+            width: 1700px;
+            height: 800px;
+            background-color: #fff;
+            margin: 0 auto;
+            overflow: hidden;
+            padding: 50px 60px;
+            box-sizing: border-box;
+        }
+        .prof1{
+            float: left;
+            width: 400px;
+            height: 800px;
+            box-sizing: border-box;
+            padding-left: 70px;
+        }
+        .prof1 h2{
+            font-size: 40px;
+            font-family: "HUWindgoth110",sans-serif;
+            padding-bottom: 10px;
+        }
+        .prof1 h3{
+            font-size: 20px;
+            padding-bottom: 20px;
+        }
+        .prof1 ul{
+            width: 350px;
+            padding-left: 30px;
+        }
+        .prof1 ul li{
+            font-size: 16px;
+            line-height: 40px;
+            font-weight: 600;
+        }
+        .icon img{
+            width: 30px;
+            padding-right: 10px;
+        }
+        .prof1 ul li:nth-child(5) img{
+            width: 24px;
+            margin: 0 3px;
+        }
+        .profile_img img{
+            width: 350px;
+            height: 350px;
+            padding-top: 30px;
+        }
+        .prof2{
+            float: right;
+            width: 65%;
+            height: 700px;
+            box-sizing: border-box;
+            border-left: 1px #c8c8c8 solid;
+            padding: 40px 0;
+        }
+
+        .list1{
+            width: 100%;
+            height: 180px;
+            float: left;
+            line-height: 25px;
+            border-bottom:1px #ddd solid;
+        }
+        .list1 p{
+            width: 100%;
+            overflow: hidden;
+        }
+        .list1 span.title{
+            float: left;
+            width: 15%;
+            font-size: 16px;
+            font-weight: 600;
+        }
+        .list1 span.content{
+            float: left;
+            width: 85%;
+            font-size: 16px;
+        }
+
+        /* skill 영역 */
+        .list23{
+            clear: both;
+            width: 1300px;
+            box-sizing: border-box; 
+            overflow: hidden;
+            padding-top: 50px;
+        }
+        .list2{
+            float: left;
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+        .title{
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .skill{
+            width: 600px;
+            height: 300px;
+            padding: 20px 15px;
+            box-sizing: border-box;
+            margin: 0 auto;
+        }
+        .skill > div{
+            clear: both;
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
+        .skill p{
+            width: 110px;
+            font-size: 16px;
+            font-weight: 600;
+            float: left;
+        }
+        .skill .bar{
+            float: left;
+            width: 200px;
+            height: 30px;
+        }
+        .skill .fullbar{
+            width: 100%;
+            height: 25px;
+            background: #D1D1D1;
+            position: relative;
+            overflow: hidden;
+        }
+        .skill .occupy{
+            background: #ffa315;
+            height: 100%;
+            color: #fff;
+            position: absolute;
+            top: 0;
+            left: -200px;
+        }
+        .skill .occupy > span{
+            float: right;
+            margin-right: 10px;
+            line-height: 25px;
+            font-size: 14px;
+        }
+        #ai .occupy{width: 95%;}
+        #ht .occupy{width: 90%;}
+        #ja .occupy{width: 70%;}
+        #jq .occupy{width: 80%;}
+        #fm .occupy{width: 95%;}
+        #c .occupy{width: 70%;}
+
+        /* 취미영역 */
+        .list3{
+            width: 500px;
+            height: 450px;
+            float: left;
+            box-sizing: border-box;
+        }
+        .hobby{
+            width: 500px;
+            height: 220px;
+        }
+        .hobby ul{
+            width: 400px;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        .hobby ul li{
+            float: left;
+            width: 68px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            padding: 0 10px;
+        }
+        .hobby img{
+            width: 40px;
+            height: 40px;
+            margin: 5px auto;
+            display: block;
+        }
+
+        /* 성향 영역 */
+        .pers{
+            width: 500px;
+            height: 150px;
+        }
+        .title2{
+            font-size: 20px;
+            text-align: center;
+            padding-bottom: 30px;
+        }
+        .pers > div{
+            clear: both;
+            width: 280px;
+            overflow: hidden;
+            padding-bottom: 15px;
+            margin: 0 auto;
+        }
+        .left{
+            width: 50px;
+            font-weight: 600;
+            float: left;
+            text-align: center;
+        }
+        .right{
+            width: 50px;
+            font-weight: 600;
+            float: right;
+            text-align: center;
+        }
+        .pers .bar2{
+            float: left;
+            width: 180px;
+            height: 10px;
+            padding-top: 2px;
+        }
+        .pers .fullbar2{
+            width: 100%;
+            height: 10px;
+            background: #D1D1D1;
+            position: relative;
+            overflow: hidden;
+        }
+        .pers .occupy2{
+            background: #000;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }
+        #per1 .occupy2{width: 28%;}
+        #per2 .occupy2{width: 54%;}
+        #per3 .occupy2{width: 65%;}
+
+        /* section2 */
+        #section2{
+            width: 100%;
+            height: 1500px;
+        }
+        #section2 .intro{
+
+            margin: 0 auto;
+            position: relative;
+            /* top: 100%;
+            opacity: 0; */
+        }
+        #section2 .intro div{
+
+            height: 100%;
+        }
+
+        .art{
+            width: 80%;
+            height: 200px;
+            margin: 0 auto;
+            padding-top: 40px;
+            box-sizing: border-box;
+        }
+        .art h2{
+            font-size: 40px;
+            padding-bottom: 20px;
+        }
+        .filter{
+            position: relative;
+        }
+        .filter:after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            transform: translateX(-50%);
+            width: 0;
+            height: 2px;
+            background: #ffa315;
+            transition: 0.6s;
+        }
+        .filter:hover:after{
+            color: #ffa315;
+            width: 60%;
+        }
+        button{
+            background-color: #fff;
+            border:0;
+            color: #888;
+            font-size: 16px;
+            display: inline-block;
+            padding: 0.4em;
+            font-weight: 300;
+            cursor: pointer;
+        }
+        button:active{
+            color:#f2733d;
+        }
+        button:focus{
+            outline: none;
+        }
+
+        .container{
+            overflow:hidden;
+            width:82%;
+            margin: 0 auto;
+            box-sizing:border-box;
+            backface-visibility: hidden;
+            min-height: 820px;
+            top: 80%;
+            position: relative;
+            opacity: 0;
+        }
+        .container:after{
+            content: "";
+            display: inline-block;
+            width: 100%;
+        }
+        .container > div{
+            float: left;
+            box-sizing:border-box;
+            position: relative;
+            width: 22%;
+            height: 230px;
+            margin:20px;
+            border: 1px solid #ccc;
+        }
+        .container > div > img{
+            width: 100%;
+            height: 100%;
+        }
+        .container .po_title{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            background: rgba(0,0,0,0.7);
+            width: 100%;
+            height: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            text-align: center;
+            color: #fff;
+            opacity: 0;
+            transition: all 0.8s;
+        }
+        .container .po_title a{
+            width:30px;
+            height: 30px;
+            display: block;
+            margin: 10px auto; 
+        }
+        .container .po_title a img{
+            width:30px;
+            height: 30px;
+            text-align: center;
+        }
+        .po_title .sum_tit{
+            margin-top: 20px;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+        .po_title .discription{
+            margin: 0 auto;
+            width: 80%;
+        }
+        .po_title .size{
+            line-height: 40px;
+        }
+        .container > div:hover .po_title,
+        .container > div:active .po_title{
+            opacity: 1;
+        }
