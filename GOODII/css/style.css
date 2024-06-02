@@ -1,0 +1,80 @@
+        *{margin:0; padding:0;}
+        body{color:#ccc; background-color: #111; /* border:1px solid red; */ height:auto;}
+        header{width:100%;/* border:1px solid red; */ top:5px;}
+        ul{list-style: none;}
+        nav li{margin:30px 0;}
+        nav li a{color:#f1f1f1; margin:0 40px; display:block; width:10px; height:30px; border-radius:10%; background-color: #f1f1f1;}
+        ul li a{color:#f1f1f1; margin:0 40px;}
+        ul li a.on{background-color:#db1d64;}
+        #logo img{width:300px; height:100px; margin-left:340px; margin-top:50px;}
+        
+        .menu a{background-color: #f1f1f1; margin-bottom:40px; color:#333; border-radius: 10px; display:block; width:70px; height:30px; margin-left:25px; text-align: center; margin-top:25px; font-family: 'pretendard'; line-height:30px;}
+
+        .menu a:hover{background-color:#db1d64; color:#f1f1f1;}
+        
+        #menu2 > article > p {margin-bottom: 10px; font-family: 'pretendard';}
+        #menu1 > article > p {font-family: 'pretendard';}
+        #menu3 > article > p {font-family: 'pretendard';}
+
+        #intro{text-align: center; height:600px; background: url(/img/Group\ 1164.png) no-repeat;}
+        #intro h1{font-size:45px; line-height: 500px; font-family: 'pretendard';}
+        #intro p{font-size:20px; margin-top:-150px; font-family: 'pretendard';}
+      
+        
+        @font-face {
+        font-family: 'KCC-Ganpan';
+        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCC-Ganpan.woff2') format('woff2');
+        font-weight: normal;
+        font-style: normal;}
+
+
+        #wrap{width:1000px; margin:auto;}
+        #num{position:fixed; right:30px; top:30px;}
+        nav{position:fixed; right:20px; top:50%; z-index:100; margin-top:-60px;}
+
+        
+
+        .image1 img{width:800px; height:auto; margin-left:80px; margin-bottom:10px;}
+        .image2 img{width:800px; height:auto; margin:auto; margin-left:85px; margin-bottom:10px;}
+        .image3 img{width:800px; height:auto; margin:auto; margin-left:80px; margin-bottom:10px;}
+
+        .menu ul{display:flex; margin:20px; margin-left:235px;}
+        .menu ul a{text-decoration: none; font-weight:500;}
+        .menu ul li{margin-left:-4px;}
+        
+        footer{/* border:1px solid red; */ padding:40px; line-height:40px; text-align: center;}
+
+
+        .a{font-family: 'KCC-Ganpan';}
+        .b{font-family: 'KCC-Ganpan';}
+        .c{font-family: 'KCC-Ganpan';}
+
+        #menu1{top:880px;}
+        #menu2{top:1710px;}
+        #menu3{top:2377px;}
+        
+     
+       /*  #content{position:relative;} */
+        section{height:auto; padding:0 10px; /* position:absolute; */ opacity: 0.1; transition:all 0.5s ease;}
+        section h1{font-size:60px; margin-bottom:30px; margin-top:10px;}
+        section p{display:block; padding:20px 0; text-align: center; line-height:30px;}
+        section.on{opacity:1;}
+        
+
+        #pop{width:456px; height:364px; position:absolute; top:300px; left:400px; background:url(/img/window.png); background-repeat: no-repeat; display:none;}
+        .close{position:absolute; right:10px; top:7px;}
+        .x img{position:absolute; left:10px; top:7px; width:30px; height:27px;}
+        dl{height:100%;}
+        dt{color:#000; font-weight:bold; height:40px; line-height:42px; text-indent:20px; margin-left:25px;}
+        dd{padding:20px; color:#000;}
+
+
+       .image1 img:hover{opacity:0.9; animation:ani 0.8s ease infinite alternate-reverse;}
+       .image2 img:hover{opacity:0.9; animation:ani 0.8s ease infinite alternate-reverse;}
+       .image3 img:hover{opacity:0.9; animation:ani 0.8s ease infinite alternate-reverse;}
+
+
+        @keyframes ani {
+            0%{transform:scale(1);}
+            100%{transform: scale(1.01); opacity: 1;}
+}
