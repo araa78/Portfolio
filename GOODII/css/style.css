@@ -61,7 +61,7 @@
         section.on{opacity:1;}
         
 
-        #pop{width:456px; height:364px; position:absolute; top:300px; left:400px; background:url(/img/window.png); background-repeat: no-repeat; display:none;}
+        #pop{width:456px; height:364px; position:absolute; top:300px; left:400px; background:url(/과제/window.png); background-repeat: no-repeat; display:none;}
         .close{position:absolute; right:10px; top:7px;}
         .x img{position:absolute; left:10px; top:7px; width:30px; height:27px;}
         dl{height:100%;}
