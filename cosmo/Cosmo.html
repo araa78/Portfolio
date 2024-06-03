@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmo</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon/32.png"><!-- 파비콘 제작해서 추가 -->
+    <link rel="apple-touch-icon" sizes="32x32" href="favicon/32.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="favicon/64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="favicon/128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="favicon/256.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="favicon/512.png">
+    <style>
+        body{background: url(img2/Group\ 48095474444.png); width:100%; height:5000px;}
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        
+            var offset = $('#contents2').offset().top;
+            $('#contents1 h2').text(offset);
+
+            $(window).on('scroll',function(){
+                var ab=$(this).scrollTop();
+                $('#contents1 h1').text(ab);
+            
+                if(ab >= 70 && ab < 1070){
+                    $('#contents2').removeClass();
+                    $('#contents2').addClass('on');
+                    var imgs='';
+
+                    for(var i=0; i<115; i++){
+                        imgs += "<img src='img1/space" +i+ ".jpg'>"
+                    };
+
+                    $("section").html(imgs);
+
+                    var value = Math.floor((ab - 70)/8.69);
+                    $("section img").hide();
+                    $("section img").eq(value).show();
+                
+                }else if(ab >= 1070){
+                    $('#contents2').removeClass();
+                    $('#contents2').addClass('on2');
+                }else{
+                    $('#contents2').removeClass();
+                }
+            
+            });
+
+            $("body").on("mousemove",function(e){
+                var posX = e.pageX/100;
+                var posY = e.pageY/150;
+
+                $(".sun").css({"left":0-posX , "top":300-posY});
+                $(".flame").css({"left":100+posX , "bottom":0+posY});
+
+                $(".earth2").css({"left":0-posX , "bottom":0-posY});
+                $(".aaa").css({"right":0+posX , "top":0+posY});
+
+                $(".mars2").css({"left":0-posX , "top":200-posY});
+                $(".mar22").css({"left":0+posX , "bottom":100+posY});
+
+                $(".saturn2").css({"left":0-posX , "top":150-posY});
+                $(".sat22").css({"left":0+posX , "bottom":0+posY});
+
+                $(".star1").css({"left":300-posX , "top":20+posY});
+                $(".star2").css({"right":300+posX , "top":20+posY});
+
+                
+            })
+
+        });
+    </script>
+</head>
+
+
+
+
+<body>
+    <div id="contents1">
+        <h1>0</h1>
+        <h2>0</h2>
+    </div>
+  <!--   <nav>
+        <ul>
+            <li><a href="#">태양계</a></li>
+            <li><a href="#contents3">태양</a></li>
+            <li><a href="#contents4">지구</a></li>
+            <li><a href="#contents5">화성</a></li>
+            <li><a href="#contents6">토성</a></li>
+        </ul>
+        <a id="triger">
+            <div class="hamburger">
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+        </a> 
+    </nav>
+    </nav> -->
+</div>
+
+    <!--contents2-->
+    <div id="contents2">
+        <section>
+            <img src="img1/space0.jpg" alt="우주">
+        </section>
+        <div id="contents3">
+            <div class="bg"></div>
+            <h1>SUN</h1>
+            <div class="sun">
+                <a href="#"><img src="img2/sun.png"></a>
+                <a class="flame" href="#"><img src="img2/Untitled-1sada.png" alt="불꽃"></a>
+            </div>
+        </div>
+        <div class="a1">
+            <h3>태양</h3>
+            <p>태양계의 중심에 있으며 지구에서 가장 가까운 항성이다.<br>
+            지구를 비롯한 여러 행성과 소행성, 유성, 혜성 등의 천체가 태양을 중심으로 돌고 있다.<br>지구는 태양을 일정한 궤도로 공전하고 있다.<br>그렇기 때문에 지구에서 바라보는 태양은 연중 일정한 궤도를 운행하는 것처럼 보인다.<br>
+            현재 태양의 나이는 약 45억 6721만년이고 핵우주 연대학에 따르면 45억 6720만년 전에 형성되었다.
+            </p>
+        </div>
+        <div id="contents4">
+            <div class="bg"></div>
+            <h1>EARTH</h1>
+            <div class="earth">
+                <a href="#"><img class="earth2" src="img2/earth.png"></a>
+                <a class="aaa" href="#"><img src="img2/Untitled-133_02.png" alt="지구효과"></a>
+            </div>
+        </div>
+        <div class="a2">
+            <h3>지구</h3>
+            <p>태양으로부터 세 번째 행성이며, 조금 두꺼운 대기층으로 둘러싸여 있고, 지금까지 발견된 지구형 행성 가운데 가장 크다.<br>
+            용암 활동이 활발했던 지구와 행성 테이아의 격렬한 충돌로 생성되었을 달을 위성으로 둔다.<br>
+            지구의 중력은 우주의 다른 물체, 특히 태양과 지구의 유일한 자연위성인 달과 상호작용한다.
+            </p>
+        </div>
+        <div id="contents5">
+            <div class="bg"></div>
+            <h1>MARS</h1>
+            <div class="mars">
+                <a href="#"><img class="mars2" src="img2/mars.png"></a>
+                <a class="mar2" href="#"><img class="mar22" src="img2/Untitled-154545454.png" alt="불꽃"></a>
+            </div>
+        </div>
+        <div class="a3">
+            <h3>화성</h3>
+            <p>태양계의 4번째 행성이며, 4개의 지구형 행성 중 하나이다.<br>표면의 철의 산화로 붉은색을 띠기 때문에 동양권에서는 불을 뜻하는 화(火)를 써서 화성 또는 형혹성(熒惑星)이라 부른다.<br>서양권에서는 로마 신화의 전쟁의 신 마르스의 이름을 따 Mars라 부른다.<br>지구와의 평균 거리는 7,800만 km이다. 화성의 지름은 지구의 1/2 정도이다.<br>자전 주기는 24시간 37분 22초로 지구보다 더 길다.
+            </p>
+        </div>
+        <div id="contents6">
+            <div class="bg"></div>
+            <h1>SATURN</h1>
+            <div class="saturn">
+                <a href="#"><img class="saturn2" src="img2/saturn.png"></a>
+                <a class="sat2" href="#"><img class="sat22" src="img2/Untitled-15555555555555_02.png" alt="먼지"></a>
+            </div>
+        </div>
+        <div class="a4">
+            <h3>토성</h3>
+            <p>태양으로부터 여섯 번째에 있는 태양계의 행성이다.<br>토성은 태양계 내의 행성 중 목성에 이어 두 번째로 크며, 지름은 약 12만 km로, 지구의 9.1배이며 부피는 760배에 달한다.<br>이에 비해 질량은 지구의 95배밖에 안되기 때문에, 토성의 평균 밀도는 0.7g/cm3에 지나지 않는다.<br>그리고 토성의 표면 중력은 지구와 비슷하다. 또한 토성은 목성, 천왕성, 해왕성과 함께 목성형 행성으로 분류된다.
+            </p>
+        </div>
+        <footer>
+            <img class="star1" src="img2/Untitled-12412412215_02.png" alt="별빛1">
+            <img class="star2" src="img2/Untitled-1214124124124124_02.png" alr="별빛2">
+            <h2 class="star3">우주의 상상력은 언제나 인간의 상상력보다 더 넓게 남아있다.</h2>
+            <!-- <p>Copyright 2024. ara Jo. All pictures cannot be copied without permission.</p> -->
+        </footer>
+    </div>
+
+    
+</body>
+</html>
