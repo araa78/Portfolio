@@ -23,7 +23,7 @@
 
         *{margin:0; padding:0; font-family: 'Pretendard-Regular';}
         ul{list-style:none;}
-        body{width:100%; height:3000px; background:url(/images/cosmos-flowers-1138041_1920.jpg) no-repeat center fixed;}
+        body{width:100%; height:3000px; background:url(images/cosmos-flowers-1138041_1920.jpg) no-repeat center fixed;}
 
         h1{position:fixed; bottom:50px; right:20px; color:white; opacity: 0.2;}
         #navi{position:fixed; top:calc(50% - 260px); left:100px;}
