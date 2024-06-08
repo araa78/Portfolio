@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>조아라 포트폴리오</title>
+    <link rel="shortcut icon" href="./favicon/32.png"><!-- 파비콘 제작해서 추가 -->
+    <link rel="apple-touch-icon" sizes="32x32" href="favicon/32.png">
+    <link rel="apple-touch-icon" sizes="64x64" href="favicon/64.png">
+    <link rel="apple-touch-icon" sizes="128x128" href="favicon/128.png">
+    <link rel="apple-touch-icon" sizes="256x256" href="favicon/256.png">
+    <link rel="apple-touch-icon" sizes="512x512" href="favicon/512.png">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/modernizr.custom.min.js"></script>
+    <script src="js/jquery-1.12.4.min.js"></script>
+    <script src="js/jquery-ui-1.12.0.custom.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="js/mixFilter.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var wd = parseInt($(window).width());
+            if(wd>=770){
+                $('#fullpage').fullpage({
+                sectionsColor: ['#fff', '#eae6e7', '#fff', '#a4a4a4'],
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+                menu: '#menu',
+                afterLoad: function(anchorLink, index) {
+                    //section 2
+                    if (index == 2) {
+                        //moving the image
+                        $('#section1').find('.occupy').delay(300).animate({
+                            left: '0%'
+                        }, 2000, 'easeOutExpo');
+
+
+
+                    }
+                    //section 3
+                    if (anchorLink == '3rdPage') {
+                        //moving the image
+                        $('#section2').find('.container').delay(0).animate({
+                            top: '-2%',
+                            opacity:'1'
+                        }, 2000, 'easeOutExpo');
+                    }
+                }
+            });
+            } 
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+    <div id="menubox">
+        <ul id="menu">
+            <li data-menuanchor="firstPage"><a href="#firstPage" onfocus="this.blur();">도입부</a>
+            <li data-menuanchor="secondPage"><a href="#secondPage" onfocus="this.blur();">나의 여정</a></li>
+            <li data-menuanchor="3rdPage"><a href="#3rdPage" onfocus="this.blur();">작업물</a></li>
+        </ul>
+    </div>
+    <div id="fullpage">
+        <div class="section" id="section0">
+            <div class="main">
+                <div class="line">
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="main_text">
+                    <p>ARA'S</p>
+                    <p>PORTFOLIO</p>
+                </div>
+            </div>
+<!--             <div class="scroll">
+
+            </div> -->
+        </div>
+        <div class="section" id="section1">
+            <div id="profile">
+                <div class="prof1">
+                    <ul>
+                        <h2>PROFILE</h2>
+                        <h3>조아라</h3>
+                        <li class="icon"><img src="img/calendar.png" alt="">1996.02.05</li>
+                        <li class="icon"><img src="img/mobile.png" alt="">010-2723-3215</li>
+                        <li class="icon"><img src="img/mail.png" alt="">tybn25@naver.com</li>
+                        <li class="icon"><img src="img/college.png" alt="">대전대학교 산업광고심리학과 졸업</li>
+                    </ul>
+                    <li class="profile_img"><img src="img/ME.jpg" alt=""></li>
+                </div>
+                <div class="prof2">
+                    <div class="list1">
+
+                        <p><span class="title">경력</span><span class="content"><strong>2022.05 ~ 2023.11</strong> 법무법인 대세 마케팅팀 대리<br><strong>2019.04 ~ 2021.08</strong> 유니비젼 온라인마케팅팀 사원</span></p>
+                        <br>
+                        <p><span class="title">자격증</span><span class="content"><strong>2019.03</strong> 평생교육사2급(최종합격)<br><strong>2022.05</strong> 2종보통운전면허(최종합격)</span></p>
+                    </div>
+                    <div class="list23">
+                        <div class="list2">
+                            <h4 class="title">SKILL</h4>
+                            <div class="skill">
+                                <div id="ai">
+                                    <p>Ai & Ps</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>90%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ht">
+                                    <p>HTML/CSS</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>85%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="ja">
+                                    <p>Javascript</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>75%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="jq">
+                                    <p>JQuery</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>80%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="fm">
+                                    <p>Figma</p>
+                                    <div class="bar">
+                                        <div class="fullbar">
+                                            <div class="occupy"><span>95%</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div> <!-- skill  -->
+                        </div> <!-- list2 -->
+                        <div class="list3">
+                            <div class="hobby">
+                                <h4 class="title">훈련이력</h4>
+                                <p><span class="title3"></span><span class="content1"><strong>2023.12 ~ 2024.04</strong>(디지털디자인)반응형 웹디자인(UIUX)&<br><span class="aaa">웹퍼블리셔 디지털 실무 양성과정</span></p>
+                            </div>
+                            <div class="pers">
+                                <h4 class="title2">노력하는 웹퍼블리셔</h4>
+                                <div di="per">
+                                    <p>끊임없이 변화하는 웹 환경 속에서, 사용자 경험을 최우선으로 생각하는 웹퍼블리셔가 되겠습니다. 매 순간 배움의 자세로 최신 기술을 익히고, 창의적인 아이디어를 통해 아름답고 기능적인 웹페이지를 만들어 나가겠습니다. 누구나 편리하게 사용할 수 있는 웹페이지를 구현하는 것이 저의 목표입니다.</p>
+                                </div>
+
+                            </div> <!-- list3 -->
+                        </div> <!--  list23 -->
+
+                    </div> <!-- prof2  -->
+
+                </div> <!--  profile  -->
+            </div> <!--  section1  -->
+
+        </div>
+        <div class="section" id="section2">
+            <div class="intro">
+                <div class="art">
+                    <h2>PORTFOLIO</h2>
+                    <div class="filterWrap">
+                        <button class="filter" data-filter="all">All</button>
+                        <button class="filter" data-filter=".web">WEB</button>
+                        <button class="filter" data-filter=".responsive">RESPONSIVE</button>
+                        <button class="filter" data-filter=".mobile">MOBILE</button>
+                    </div>
+                </div>
+                <div class="container" id="mixItUp">
+                    <div class="mix responsive" id="d1" data-myorder="1">
+                        <img src="img/maeil.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">매일유업</h3>
+                            <p class="discription">매일유업의 메인컬러를 사용하여<br>심플하게 디자인</p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/HTML/CSS/JQuery</p>
+                            <a href="https://araa78.github.io/Portfolio/maeil/" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix web" id="d2" data-myorder="2">
+                        <img src="img/cat1.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">고양집</h3>
+                            <p class="discription">자체 제작 로고에 맞춰 디자인한<br>세로스크롤 페이지</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">AI/Photoshop/HTML/CSS/JQuery</p>
+                            <a href="https://araa78.github.io/Portfolio/cat/" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix web" id="d3" data-myorder="3">
+                        <img src="img/cosmo.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">Cosmo</h3>
+                            <p class="discription">우주를 테마로 디자인한<br>세로스크롤 페이지</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/HTML/CSS</p>
+                            <a href="https://araa78.github.io/Portfolio/cosmo/" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix mobile" id="d4" data-myorder="4">
+                        <img src="img/dang.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">당당해(자체 디자인)</h3>
+                            <p class="discription">대체당을 사용한 음료를 알려주는<br>어플 디자인</p>
+                            <p class="size">Mobile Design</p>
+                            <p class="program">Photoshop/Illustrator</p>
+                            <a href="https://www.figma.com/proto/wVf3et91ICoHUn3fDNosWt/Untitled?node-id=1-663&t=DspvF4oQvNcAsvnG-1" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix web" id="d5" data-myorder="5">
+                        <img src="img/mega.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">메가커피</h3>
+                            <p class="discription">기존 홈페이지를 풀페이지로 변경하고<br>그에 맞춰 심플하게 디자인</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/figma</p>
+                            <a href="https://araa78.github.io/Portfolio/mega/" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix web" id="d5" data-myorder="5">
+                        <img src="img/GOODII.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">GOODII</h3>
+                            <p class="discription">패럴랙스 스크롤링과 심플한 디자인을<br>활용한 자체 제작 웹사이트</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/HTML/CSS/JQuery</p>
+                            <a href="https://araa78.github.io/Portfolio/GOODII/" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix responsive" id="d5" data-myorder="5">
+                        <img src="img/vlast.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">VLAST</h3>
+                            <p class="discription">풀페이지에 맞춰 기존 홈페이지의<br>메인컬러를 살려 사용자의 편의성에<br>맞춰 심플하게 디자인</p>
+                            <p class="size">Responsive Web</p>
+                            <p class="program">Photoshop/figma/HTML/CSS/JQuery</p>
+                            <a href="https://araa78.github.io/Portfolio/VLAST/" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mix web" id="d5" data-myorder="5">
+                        <img src="img/wave.png" alt="" class="d_img">
+                        <div class="po_title">
+                            <h3 class="sum_tit">Wave</h3>
+                            <p class="discription">여러장의 사진을 마우스 움직임으로<br>제어하는 홈페이지 디자인</p>
+                            <p class="size">web site(1920X1080)</p>
+                            <p class="program">Photoshop/HTML/CSS/JQuery</p>
+                            <a href="https://araa78.github.io/Portfolio/wave/" target="new" class="ov_img"><img src="img/link.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- <div id="footer">
+                <p>COPYRIGHT &copy; 2022 PENGSU ALL RIGHTS RESERVED.</p>
+            </div> -->
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>

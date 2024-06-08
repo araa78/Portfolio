@@ -1,0 +1,686 @@
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 100;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Thin.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 200;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraLight.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 300;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Light.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 400;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Regular.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 500;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Medium.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 600;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-SemiBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 700;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Bold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 800;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-ExtraBold.ttf') format("truetype");
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Pretendard';
+    font-weight: 900;
+    font-style: normal;
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot');
+    src: url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.woff') format('woff'),
+        url('https://cdn.jsdelivr.net/gh/webfontworld/pretendard/Pretendard-Black.ttf') format("truetype");
+    font-display: swap;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'Pretendard';, sans-serif !important;
+    box-sizing: border-box;
+}
+body{
+	font-size: 14px; 
+	color: #000;
+	background-color: #fff;
+    overflow-x: hidden;
+}
+ul,li{
+    list-style: none;
+}
+a{
+    color:#000000;
+    text-decoration: none;
+}
+img{
+    border:none;
+    vertical-align: middle;
+}
+input{
+    outline:none;
+}
+button{
+    outline: none;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin: 0;
+    padding: 0;
+}
+
+/* menu */
+#menubox{
+    position: fixed;
+    top: 0;
+    right: 4%;
+    width: 100%;
+    height: 80px;
+    z-index: 99;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+#menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 20%;
+    height: 100px;
+}
+#menu li a{
+    color: #aaa;
+    font-size: 18px;
+}
+#menu li a.active{
+    color: #DB1D64;
+}
+#menu li a:hover{
+    color: #DB1D64;
+}
+#menu li a,#menu li.active a{
+    padding: 5px 10px;
+    display:block;color:#fff;
+    
+}
+#menu li.active a{
+    color: #DB1D64;
+    font-weight:bold;
+}
+
+/* section0 */
+#fullpage{
+    width: 100%;
+    height: 100%;
+}
+#section0{
+    width: 100%;
+    height: 100%;
+    background:#000 !important;
+}
+.main{
+    position: relative;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 60%;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: #000;
+    z-index: 10;
+}
+.main .line span{
+    display: block;
+    position: absolute;
+    background: #fff;
+    z-index: 11;
+}
+.main .line span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    animation: ani1 1s;
+}
+.main .line span:nth-child(2){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 5px;
+    animation: ani1 1s;
+}
+.main_text{
+    animation: ani3 1s;
+    font-family: 'Pretendard';
+    color:#fff;
+}
+.main_text>p{
+    font-weight:bold;
+}
+@keyframes ani1 {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+@keyframes ani2 {
+    0%{
+        height: 0;
+    }
+    100%{
+        height: 100%;
+    }
+}
+@keyframes ani3 {
+    0%{
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+.main h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+.main p{
+    font-size: 90px;
+}
+.main p:first-child{
+    color:#DB1D64;
+}
+.scroll{
+    width: 300px;
+    height: 100px;
+    margin: 300px auto 0;
+    text-align: center;
+}
+.scroll img{
+    width: 46px;
+    height: auto;
+    animation: ani5 3s infinite ease-in-out;
+}
+.scroll h6{
+    font-size: 14px;
+}
+@keyframes ani5 {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+/* section1 */
+#section1{
+    background-color: #000;
+}
+.fp-tableCell{
+    background-color:#000;
+}
+#profile{
+    position: relative;
+    width: 1700px;
+    height: 800px;
+    background-color: #fff;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: 50px 60px;
+    box-sizing: border-box;
+}
+.prof1{
+    float: left;
+    width: 400px;
+    height: 800px;
+    box-sizing: border-box;
+    padding-left: 70px;
+}
+.prof1 h2{
+    font-size: 40px;
+    font-family: "HUWindgoth110",sans-serif;
+    padding-bottom: 10px;
+    color:#DB1D64;
+}
+.prof1 h3{
+    font-size: 20px;
+    padding-bottom: 25px;
+}
+.prof1 ul{
+    width: 350px;
+    padding-left: 30px;
+}
+.prof1 ul li{
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 600;
+}
+.icon img{
+    width: 30px;
+    padding-right: 10px;
+}
+.prof1 ul li:nth-child(5) img{
+    width: 24px;
+    margin: 0 3px;
+}
+.profile_img img{
+    width: 299px;
+    height: 375px;
+    padding-top: 30px;
+    padding-left:30px;
+}
+.prof2{
+    float: right;
+    width: 65%;
+    height: 700px;
+    box-sizing: border-box;
+    border-left: 1px #c8c8c8 solid;
+    padding: 60px 0;
+}
+
+.list1{
+    width: 100%;
+    height: 160px;
+    float: left;
+    line-height: 20px;
+    border-bottom:1px #ddd solid;
+}
+.list1 p{
+    width: 100%;
+    overflow: hidden;
+}
+.list1 span.title{
+    float: left;
+    width: 15%;
+    font-size: 16px;
+    font-weight: bold;
+    color:#000;
+}
+.list1 span.content{
+    float: left;
+    width: 85%;
+    font-size: 16px;
+}
+.content>strong{
+    color:#DB1D64;
+    font-weight:bold;
+    padding-right:5px;
+}
+/* skill 영역 */
+.list23{
+    clear: both;
+    width: 1300px;
+    box-sizing: border-box; 
+    overflow: hidden;
+    padding-top: 75px;
+}
+.list2{
+    float: left;
+    width: 500px;
+    height: 500px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.title{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+.skill{
+    width: 600px;
+    height: 300px;
+    padding: 20px 15px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.skill > div{
+    clear: both;
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 30px;
+    padding-left: 40px;
+}
+.skill p{
+    width: 110px;
+    font-size: 16px;
+    font-weight: 600;
+    float: left;
+}
+.skill .bar{
+    float: left;
+    width: 200px;
+    height: 30px;
+}
+.skill .fullbar{
+    width: 100%;
+    height: 25px;
+    background: #D1D1D1;
+    position: relative;
+    overflow: hidden;
+}
+.skill .occupy{
+    background: #DB1D64;
+    height: 100%;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: -200px;
+}
+.skill .occupy > span{
+    float: right;
+    margin-right: 10px;
+    line-height: 25px;
+    font-size: 14px;
+}
+#ai .occupy{width: 90%;}
+#ht .occupy{width: 85%;}
+#ja .occupy{width: 75%;}
+#jq .occupy{width: 80%;}
+#fm .occupy{width: 95%;}
+
+/* 취미영역 */
+.list3{
+    width: 500px;
+    height: 450px;
+    float: left;
+    box-sizing: border-box;
+}
+.hobby{
+    width: 500px;
+    height: 220px;
+}
+.hobby>p{
+    margin-left:55px;
+}
+.content1>strong{
+    color:#DB1D64;
+    margin-right:5px;
+}
+.title3>.content{
+    margin-bottom:10px;
+}
+.content1>.aaa{
+    padding-left:133px;
+}
+
+
+/* 성향 영역 */
+.pers{
+    width: 500px;
+    height: 150px;
+    line-height: 1.3;
+    margin-top:-60px;
+    font-size:16px;
+}
+.title2{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 30px;
+    color:#DB1D64;
+}
+.pers > div{
+    clear: both;
+    width: 280px;
+    overflow: hidden;
+    padding-bottom: 15px;
+    margin: 0 auto;
+}
+.left{
+    width: 50px;
+    font-weight: 600;
+    float: left;
+    text-align: center;
+}
+.right{
+    width: 50px;
+    font-weight: 600;
+    float: right;
+    text-align: center;
+}
+.pers .bar2{
+    float: left;
+    width: 180px;
+    height: 10px;
+    padding-top: 2px;
+}
+.pers .fullbar2{
+    width: 100%;
+    height: 10px;
+    background: #D1D1D1;
+    position: relative;
+    overflow: hidden;
+}
+.pers .occupy2{
+    background: #000;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+#per1 .occupy2{width: 28%;}
+#per2 .occupy2{width: 54%;}
+#per3 .occupy2{width: 65%;}
+
+/* section2 */
+#section2{
+    width: 100%;
+    height: 1500px;
+    background: #f5f5f5 !important;
+}
+#section2 .intro{
+    width: 1700px;
+    height: 800px;
+    background-color: #000;
+    margin: 0 auto;
+    position: relative;
+    /* top: 100%;
+    opacity: 0; */
+}
+.art{
+    width: 80%;
+    height: 200px;
+    margin: 0 auto;
+    padding-top: 40px;
+    box-sizing: border-box;
+}
+.art h2{
+    font-size: 60px;
+    padding-bottom: 20px;
+    color:#DB1D64;
+}
+.filter{
+    position: relative;
+}
+.filter:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 31px;;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: #DB1D64;
+    transition: 0.6s;
+}
+.filter:hover:after{
+    background-color:#DB1D64;
+    width:100%;
+}
+button{
+    background-color: #000;
+    border:0;
+    color: #fff;
+    font-size: 16px;
+    display: inline-block;
+    padding: 0.4em;
+    font-weight: 300;
+    cursor: pointer;
+    border:2px solid #fff;
+    margin-right:10px;
+}
+button:active{
+    color:#DB1D64;
+}
+button:focus{
+    outline: none;
+}
+
+.container{
+    overflow:hidden;
+    width:82%;
+    margin: 0 auto;
+    box-sizing:border-box;
+    backface-visibility: hidden;
+    min-height: 820px;
+    top: 80%;
+    position: relative;
+    opacity: 0;
+}
+.container:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+.container > div{
+    float: left;
+    box-sizing:border-box;
+    position: relative;
+    width: 22%;
+    height: 230px;
+    margin:20px;
+    border: 1px solid #ccc;
+}
+.container > div > img{
+    width: 100%;
+    height: 100%;
+}
+.container .po_title{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: all 0.8s;
+}
+.container .po_title a{
+    width:30px;
+    height: 30px;
+    display: block;
+    margin: 10px auto; 
+}
+.container .po_title a img{
+    width:30px;
+    height: 30px;
+    text-align: center;
+}
+.po_title .sum_tit{
+    margin-top: 20px;
+    font-size: 20px;
+    line-height: 1.8;
+    color:#f87fab;
+}
+.po_title .discription{
+    margin: 0 auto;
+    width: 80%;
+}
+.po_title .size{
+    line-height: 40px;
+}
+.container > div:hover .po_title,
+.container > div:active .po_title{
+    opacity: 1;
+}
