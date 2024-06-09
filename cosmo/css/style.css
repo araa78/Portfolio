@@ -1,10 +1,10 @@
     @font-face{
     font-family:'A';
     font-weight:bold;
-    src:url('/font/ali.eot');   /*ms에서 개발한 ie전용 서체*/
-    src:url('/font/ali.eot')format('embedded-opentype'),
-    url('/font/ali.woff')format('woff'),   /*최신표준포맷.지원되지 않는 브라우저가 많다*/
-    url('/font/ali.ttf')format('truetype');   /*대부분의 웹브라우저가 지원한다*/
+    src:url('font/ali.eot');   /*ms에서 개발한 ie전용 서체*/
+    src:url('font/ali.eot')format('embedded-opentype'),
+    url('font/ali.woff')format('woff'),   /*최신표준포맷.지원되지 않는 브라우저가 많다*/
+    url('font/ali.ttf')format('truetype');   /*대부분의 웹브라우저가 지원한다*/
     }
 
     @font-face {
